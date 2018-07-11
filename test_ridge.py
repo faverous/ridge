@@ -5,6 +5,7 @@ import numpy as np
 
 # test_data为dataframe格式数据
 # 测试
+# mj
 def test(test_data):
     print('----开始测试----')
     print(test_data)
@@ -16,9 +17,9 @@ def test(test_data):
     print('----测试完成----')
 
 def begin(file_path):
-    data = pd.read_excel(file_path) #读取数据
+    data = pd.read_csv(file_path) #读取数据
     frame = DataFrame(data)
     test(frame)
 
 if __name__ == '__main__':
-    begin('test_ridge_T3.xlsx')
+    begin('test_ridge_T3.csv')
